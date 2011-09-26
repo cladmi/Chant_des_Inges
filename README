@@ -1,0 +1,13 @@
+SongBook HomePage:
+	http://songs.sourceforge.net/
+
+
+For the setup, I run:
+	./configure --with-texmf-path=/usr/local/share/texmf
+	sudo make install
+
+Maybe everything is not needed, but it worked for me like that
+
+
+To compile, just run:
+	make
