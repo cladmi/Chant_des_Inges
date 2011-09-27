@@ -1,37 +1,35 @@
-%\documentclass[10pt]{article}
-\documentclass[10pt,a4paper,notitlepage]{book}
+\documentclass[10pt]{book}
 \usepackage[lyric]{songs}
 \usepackage{graphicx}
 \usepackage[latin1]{inputenc}  %% les accents dans le fichier.tex
 
-%\usepackage[a6paper]{geometry}
+\usepackage[a6paper]{geometry}
 
 
 \nosongnumbers		% disables song numbering (in the grey box)
 \pagestyle{empty}	% no line numbers
 %\setlength{\sbarheight}{0pt}	% no funcking bar over and under each song
 
-\versesep=30pt
+\versesep=15pt
 \songcolumns{1}
 
 
-\textheight=26cm
-\voffset=-1.5cm
-\hoffset=-1cm
-\textwidth=15cm
+\textheight=13cm
+\voffset=-0.75cm
+\hoffset=-0.5cm
+\textwidth=8.75cm
 
 \newindex{titleidx}{titleidx}
 \noversenumbers
 
+\renewcommand{\notefont}{\rmfont\Large}
+
+
 \begin{document}
-
-
-
 \begin{songs}{titleidx}
+\beginsong{Chant des Ingénieurs Grenoblois}[by={\small Passoire}]
 
-\beginsong{Chant des Ingénieurs Grenoblois}[by={Passoire}]
-
-{\LARGE
+{\small
 
 		\beginverse
 
@@ -54,13 +52,13 @@
 		Ensuite viennent les Ense3, Hourra\,! Hourra\,!
 		Au grand jamais ils ne titubent, Hourra\,! Hourra\,!
 		Ils induisent en vous un flux électrique
-		Mesdames, venez pomper leur fluide magique
+		Mesdames, venez pomper leur fluid'magique
 		Ingénieurs, oui, peut-être, un jour nous serons.
 		\endverse
 
 		\beginverse
 		Mais non Papet', ils sont pas morts, Hourra\,!, Hourra\,!
-		Ca se se saurait si c'était le cas, Hourra\,! Hourra\,!
+		Ca se se saurait si c'était l'cas, Hourra\,! Hourra\,!
 		Que ce soit au taff, que ce soit au bar
 		La papeterie, proche de l'orgie
 		Ingénieurs, oui, peut-être, un jour nous serons
@@ -75,7 +73,6 @@
 		\endverse
 
 		\newpage
-		\vspace{0.5cm}
 
 		\beginverse
 		Au centre ville, y'a les GI, Hourra\,!, Hourra\,!
@@ -109,8 +106,8 @@
 		Ingénieurs, oui, toujours, nous le resterons.
 		\endverse
 }
-\endsong
 
+\endsong
 \end{songs}
 
 \end{document}
