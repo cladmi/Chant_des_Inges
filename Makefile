@@ -1,5 +1,5 @@
 CTEX=pdflatex
-LTEX=songidx
+LTEX=./songs-2.12/src/songidx/songidx
 
 TEXFILE=chant_inge
 

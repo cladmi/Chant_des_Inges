@@ -1,23 +1,24 @@
-\documentclass[10pt]{article}
+%\documentclass[10pt]{article}
+\documentclass[10pt,a4paper,notitlepage]{book}
 \usepackage[lyric]{songs}
 \usepackage{graphicx}
 \usepackage[latin1]{inputenc}  %% les accents dans le fichier.tex
 
-\usepackage[a6paper]{geometry}
+%\usepackage[a6paper]{geometry}
 
 
 \nosongnumbers		% disables song numbering (in the grey box)
 \pagestyle{empty}	% no line numbers
 %\setlength{\sbarheight}{0pt}	% no funcking bar over and under each song
 
-\versesep=10pt
+\versesep=30pt
 \songcolumns{1}
 
 
-\textheight=12cm
-%\voffset=-0.5cm
-%\hoffset=-0.5cm
-\textwidth=9cm
+\textheight=26cm
+\voffset=-1.5cm
+\hoffset=-1cm
+\textwidth=15cm
 
 \newindex{titleidx}{titleidx}
 \noversenumbers
@@ -30,7 +31,7 @@
 
 \beginsong{Chant des Ingénieurs Grenoblois}[by={Passoire}]
 
-{\small
+{\LARGE
 
 		\beginverse
 
@@ -74,7 +75,7 @@
 		\endverse
 
 		\newpage
-\typeout{ATTENTION PAGE ALIGNE GAUCHE OU DROITE http://stackoverflow.com/questions/1670463/latex-change-margins-of-only-a-few-pages}
+		\vspace{0.5cm}
 
 		\beginverse
 		Au centre ville, y'a les GI, Hourra\,!, Hourra\,!
@@ -108,8 +109,8 @@
 		Ingénieurs, oui, toujours, nous le resterons.
 		\endverse
 }
-
 \endsong
+
 \end{songs}
 
 \end{document}

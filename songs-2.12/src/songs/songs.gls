@@ -8,17 +8,13 @@
   \item v1.1\efill 
  \subitem General:\ Change log introduced and first release of this documentation\pfill 1
   \item v1.11\efill 
- \subitem \verb*+\SB@displayindex+:\ Item separator macro now localized in scope to the index file\pfill 
-		147
+ \subitem \verb*+\SB@displayindex+:\ Item separator macro now localized in scope to the index file\pfill 147
     \subitem \verb*+\SB@idxitemsep+:\ Changed macro name to avoid a name clash\pfill 145
   \item v1.12\efill 
- \subitem \verb*+\beginchorus+:\ Shifted to using \cs  {parindent} instead of \cs  {everypar} to do indentation\pfill 
-		90
-    \subitem \verb*+\musicnote+:\ Now just (conditionally) calls \cs  {textnote} for consistency\pfill 
-		95
+ \subitem \verb*+\beginchorus+:\ Shifted to using \cs  {parindent} instead of \cs  {everypar} to do indentation\pfill 90
+    \subitem \verb*+\musicnote+:\ Now just (conditionally) calls \cs  {textnote} for consistency\pfill 95
     \subitem \verb*+\SB@@@beginsong+:\ Redid spacing and page-breaking\pfill 74
-    \subitem \verb*+\SB@beginverse+:\ Shifted to using \cs  {parindent} instead of \cs  {everypar} to do indentation\pfill 
-		88
+    \subitem \verb*+\SB@beginverse+:\ Shifted to using \cs  {parindent} instead of \cs  {everypar} to do indentation\pfill 88
     \subitem \verb*+\SB@emitchord+:\ Inhibited hyphenation of trailing punctuation\pfill 126
     \subitem \verb*+\SB@endsong+:\ Redid spacing and page-breaking\pfill 75
     \subitem \verb*+\SB@parindent+:\ Added\pfill 87
@@ -45,8 +41,7 @@
     \subitem \verb*+\resettitles+:\ Added.\pfill 72
     \subitem \verb*+\songtitle+:\ Added song title iterators\pfill 72
   \item v1.16\efill 
- \subitem \verb*+\SB@emitchord+:\ Chord macros massively reorganized to take lyrics as implicit rather than explicit arguments\pfill 
-		126
+ \subitem \verb*+\SB@emitchord+:\ Chord macros massively reorganized to take lyrics as implicit rather than explicit arguments\pfill 126
   \item v1.17\efill 
  \subitem General:\ Transformed the source from a class to a package\pfill 1
     \subitem \verb*+\songmark+:\ Added.\pfill 52
