@@ -11,7 +11,7 @@ all: $(PRINT).pdf
 
 
 $(PRINT).pdf: $(TEXFILE).pdf
-	pdftk $(TEXFILE).pdf cat 3 2 2S 3S 3 2 2S 3S output tmp.pdf
+	pdftk $(TEXFILE).pdf cat 2 1 1S 2S 2 1 1S 2S output tmp.pdf
 	pdfnup --nup 2x2 --no-landscape --frame true --outfile $(PRINT).pdf tmp.pdf
 	rm tmp.pdf
 
@@ -19,6 +19,8 @@ $(PRINT).pdf: $(TEXFILE).pdf
 
 $(TEXFILE).pdf: titleidx.sbx songs.sty
 	$(CTEX) $(TEXFILE).tex
+	pdftk $(TEXFILE).pdf cat 2 3 output tmp.pdf
+	mv tmp.pdf $(TEXFILE).pdf
 	rm -f $(TEXFILE).aux $(TEXFILE).log titleidx.sxd titleidx.sbx
 
 titleidx.sbx: titleidx.sxd
