@@ -20,6 +20,7 @@ $(PRINT).pdf: $(TEXFILE).pdf
 $(TEXFILE).pdf: titleidx.sbx songs.sty
 	$(CTEX) $(TEXFILE).tex
 	pdftk $(TEXFILE).pdf cat 2 3 output tmp.pdf
+	cp ${TEXFILE}.pdf aux.pdf
 	mv tmp.pdf $(TEXFILE).pdf
 	rm -f $(TEXFILE).aux $(TEXFILE).log titleidx.sxd titleidx.sbx
 
